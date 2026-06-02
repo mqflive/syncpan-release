@@ -1,0 +1,15 @@
+*.dmg
+*.exe
+*.msi
+*.AppImage
+*.deb
+*.rpm
+*.sig
+*.zip
+*.tar.gz
+*.blockmap
+SHA256SUMS.txt
+latest.json
+node_modules/
+.DS_Store
+Thumbs.db
