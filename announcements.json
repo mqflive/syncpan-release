@@ -1,0 +1,98 @@
+{
+  "version": "1.0",
+  "announcements": [
+    {
+      "id": "ann-2026-06-welcome-syncpan",
+      "type": "info",
+      "priority": 300,
+      "title": "👋 欢迎使用 SyncPan",
+      "summary": "跨网盘文件同步工具，支持百度网盘和夸克网盘。",
+      "content": "感谢你使用 SyncPan。\n\nSyncPan 可以帮助你：\n• 在百度网盘和夸克网盘之间同步文件\n• 设置定时任务，自动执行同步\n• 管理多个网盘账号\n• 批量传输和分享文件\n\n如果你有建议或问题，欢迎随时反馈。",
+      "action": {
+        "type": "url",
+        "target": "https://github.com/mqflive/syncpan-release/issues",
+        "label": "反馈建议"
+      },
+      "targetVersions": "*",
+      "targetLanguages": ["*"],
+      "showOnce": true,
+      "popup": false,
+      "createdAt": "2026-06-01T00:00:00Z",
+      "expiresAt": null,
+      "locales": {
+        "zh-CN": {
+          "title": "👋 欢迎使用 SyncPan",
+          "summary": "跨网盘文件同步工具，支持百度网盘和夸克网盘。",
+          "content": "感谢你使用 SyncPan。\n\nSyncPan 可以帮助你：\n• 在百度网盘和夸克网盘之间同步文件\n• 设置定时任务，自动执行同步\n• 管理多个网盘账号\n• 批量传输和分享文件\n\n如果你有建议或问题，欢迎随时反馈。",
+          "actionLabel": "反馈建议"
+        },
+        "en": {
+          "title": "👋 Welcome to SyncPan",
+          "summary": "Cross-cloud file sync tool supporting Baidu Pan and Quark Pan.",
+          "content": "Thank you for using SyncPan.\n\nSyncPan can help you:\n• Sync files between Baidu Pan and Quark Pan\n• Schedule automatic sync tasks\n• Manage multiple cloud accounts\n• Batch transfer and share files\n\nIf you have suggestions or encounter issues, feel free to provide feedback.",
+          "actionLabel": "Send Feedback"
+        }
+      }
+    },
+    {
+      "id": "ann-2026-06-release-v006",
+      "type": "feature",
+      "priority": 280,
+      "title": "🚀 SyncPan v0.0.6 已发布",
+      "summary": "新增消息通知系统，支持公告推送。",
+      "content": "SyncPan v0.0.6 已发布。\n\n新功能：\n• 消息通知系统：标题栏新增公告按钮，可查看最新公告\n• 定时任务增强：优化了 cron 表达式校验\n• 性能优化：降低了内存占用\n\n建议更新到最新版以获得最佳体验。",
+      "action": {
+        "type": "url",
+        "target": "https://github.com/jlcodes99/syncpan/releases/latest",
+        "label": "查看最新版本"
+      },
+      "targetVersions": "*",
+      "targetLanguages": ["*"],
+      "showOnce": true,
+      "popup": false,
+      "createdAt": "2026-06-06T00:00:00Z",
+      "expiresAt": null,
+      "locales": {
+        "zh-CN": {
+          "title": "🚀 SyncPan v0.0.6 已发布",
+          "summary": "新增消息通知系统，支持公告推送。",
+          "content": "SyncPan v0.0.6 已发布。\n\n新功能：\n• 消息通知系统：标题栏新增公告按钮，可查看最新公告\n• 定时任务增强：优化了 cron 表达式校验\n• 性能优化：降低了内存占用\n\n建议更新到最新版以获得最佳体验。",
+          "actionLabel": "查看最新版本"
+        },
+        "en": {
+          "title": "🚀 SyncPan v0.0.6 Released",
+          "summary": "New announcement notification system.",
+          "content": "SyncPan v0.0.6 has been released.\n\nNew features:\n• Announcement system: bell button in title bar for viewing announcements\n• Enhanced scheduled tasks: improved cron validation\n• Performance optimization: reduced memory usage\n\nWe recommend updating to the latest version for the best experience.",
+          "actionLabel": "View Latest Release"
+        }
+      }
+    },
+    {
+      "id": "ann-2026-06-qq-group",
+      "type": "info",
+      "priority": 800,
+      "title": "💬 加入QQ群",
+      "summary": "加入QQ群 945729782，获取最新动态和技术交流。",
+      "content": "欢迎加入 SyncPan 用户交流群！\n\n群号：945729782\n\n在这里你可以：\n• 获取最新版本更新通知\n• 反馈使用问题和建议\n• 与其他用户交流使用经验\n\n点击下方按钮一键加群。",
+      "action": {
+        "type": "url",
+        "target": "https://qm.qq.com/q/HIeAFUugQQ",
+        "label": "加入QQ群"
+      },
+      "targetVersions": "*",
+      "targetLanguages": ["*"],
+      "showOnce": false,
+      "popup": true,
+      "createdAt": "2026-06-06T00:35:00Z",
+      "expiresAt": null,
+      "locales": {
+        "zh-CN": {
+          "title": "💬 加入QQ群",
+          "summary": "加入QQ群 945729782，获取最新动态和技术交流。",
+          "content": "欢迎加入 SyncPan 用户交流群！\n\n群号：945729782\n\n在这里你可以：\n• 获取最新版本更新通知\n• 反馈使用问题和建议\n• 与其他用户交流使用经验\n\n点击下方按钮一键加群。",
+          "actionLabel": "加入QQ群"
+        }
+      }
+    }
+  ]
+}
