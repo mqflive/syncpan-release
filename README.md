@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mqflive/syncpan-release/releases/latest"><img alt="百度网盘转存工具最新版本" src="https://img.shields.io/github/v/release/mqflive/syncpan-release?label=最新版本&color=0ea5e9" /></a>
-  <a href="https://github.com/mqflive/syncpan-release/releases"><img alt="百度网盘和夸克网盘转存软件下载量" src="https://img.shields.io/github/downloads/mqflive/syncpan-release/total?label=总下载量&color=059669" /></a>
-  <img alt="网盘工具支持Windows macOS Linux" src="https://img.shields.io/badge/支持-Windows%20%7C%20macOS%20%7C%20Linux-8b5cf6" />
-  <img alt="百度网盘夸克网盘批量管理工具" src="https://img.shields.io/badge/支持网盘-百度网盘%20%7C%20夸克网盘-059669" />
+  <a href="https://github.com/mqflive/syncpan-release/releases/latest"><img src="https://img.shields.io/github/v/release/mqflive/syncpan-release?label=Release&color=0ea5e9" /></a>
+  <a href="https://github.com/mqflive/syncpan-release/releases"><img src="https://img.shields.io/github/downloads/mqflive/syncpan-release/total?label=Downloads&color=059669" /></a>
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-8b5cf6" />
+  <img src="https://img.shields.io/badge/Pan-Baidu%20%7C%20Quark-059669" />
 </p>
 
 ---
