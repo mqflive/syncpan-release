@@ -5,7 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mqflive/syncpan-release/releases/latest"><img alt="下载最新版" src="https://img.shields.io/badge/最新版本-v0.0.18-0ea5e9" /></a>
+  <a href="https://github.com/mqflive/syncpan-release/releases/latest"><img alt="最新版本" src="https://img.shields.io/github/v/release/mqflive/syncpan-release?label=最新版本&color=0ea5e9" /></a>
+  <a href="https://github.com/mqflive/syncpan-release/releases"><img alt="总下载量" src="https://img.shields.io/github/downloads/mqflive/syncpan-release/total?label=总下载量&color=059669" /></a>
   <img alt="平台" src="https://img.shields.io/badge/支持平台-Windows%20%7C%20macOS%20%7C%20Linux-8b5cf6" />
   <img alt="网盘" src="https://img.shields.io/badge/支持网盘-百度网盘%20%7C%20夸克网盘-059669" />
 </p>
