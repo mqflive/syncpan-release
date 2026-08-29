@@ -1,14 +1,30 @@
-# SyncPan（盘同步）— 百度网盘转存工具 / 夸克网盘管理软件 / 网盘批量自动追更
+<div align="center">
+
+<img src="https://syncpan.top/images/logo.png" alt="SyncPan Logo" width="110" />
+
+# SyncPan（盘同步）
+
+**百度网盘 / 夸克网盘 一站式效率工具**
+
+自动追更 · 批量转存 · 批量分享 · 资源搜索 · 文件管理
+
+免费使用 · 跨三平台 · 数据本地留存 · Rust 核心
+
+<a href="https://github.com/mqflive/syncpan-release/releases/latest"><img src="https://img.shields.io/github/v/release/mqflive/syncpan-release?label=Release&color=0ea5e9" /></a>
+<a href="https://github.com/mqflive/syncpan-release/releases"><img src="https://img.shields.io/github/downloads/mqflive/syncpan-release/total?label=Downloads&color=059669" /></a>
+<a href="https://syncpan.top"><img src="https://img.shields.io/badge/官网-syncpan.top-2563eb" /></a>
+<img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-8b5cf6" />
+<img src="https://img.shields.io/badge/Core-Rust%20%7C%20Tauri-orange" />
+
+🌐 <a href="https://syncpan.top"><strong>官方网站</strong></a> ·
+📥 <a href="https://syncpan.top/download/">下载客户端</a> ·
+📖 <a href="https://syncpan.top/docs/quick-start">使用文档</a> ·
+🎁 <a href="https://syncpan.top">发帖免费领 SVIP</a>
+
+</div>
 
 <p align="center">
-  <strong>免费桌面端百度网盘和夸克网盘批量转存、自动追更、文件管理工具。支持百度网盘转存软件、夸克网盘批量转存、网盘分享链接解析</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/mqflive/syncpan-release/releases/latest"><img src="https://img.shields.io/github/v/release/mqflive/syncpan-release?label=Release&color=0ea5e9" /></a>
-  <a href="https://github.com/mqflive/syncpan-release/releases"><img src="https://img.shields.io/github/downloads/mqflive/syncpan-release/total?label=Downloads&color=059669" /></a>
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-8b5cf6" />
-  <img src="https://img.shields.io/badge/Pan-Baidu%20%7C%20Quark-059669" />
+  <strong>14</strong> 个功能模块 · <strong>8</strong> 个通知渠道 · <strong>3</strong> 大桌面平台 · <strong>2</strong> 大网盘 · <strong>10</strong> 种主题配色
 </p>
 
 ---
@@ -16,7 +32,11 @@
 ## 目录
 
 - [SyncPan 是什么](#syncpan-是什么)
+- [界面预览](#界面预览)
 - [核心亮点](#核心亮点)
+- [效率对比](#-效率对比--为什么别手动)
+- [功能一览](#-功能一览)
+- [技术亮点](#-技术亮点)
 - [功能详解](#功能详解)
   - [自动追更](#-自动追更)
   - [文件浏览与管理](#-文件浏览与管理)
@@ -37,6 +57,8 @@
 - [加入用户群](#加入用户群)
 - [常见问题](#常见问题)
 - [更新日志](#更新日志)
+- [Star History](#-star-history)
+- [路线图](#-路线图)
 
 ---
 
@@ -47,6 +69,15 @@
 你可以把它理解为网盘的「效率增强器」——它能自动帮你追更喜欢的资源、批量转存分享链接、批量处理大量文件、搜索全网资源并一键转存，让你从重复的手动操作中解放出来。
 
 支持 Windows、macOS 和 Linux 三大桌面平台，完全免费使用。支持百度网盘转存、夸克网盘批量转存、网盘自动追更、网盘文件批量重命名、网盘批量分享等功能。
+
+---
+
+## 界面预览
+
+<p align="center">
+  <img src="https://syncpan.top/images/docs/qs-main-interface.png" alt="SyncPan 主界面" width="760" />
+</p>
+<p align="center">SyncPan 主界面 · 更多功能截图与上手教程见 <a href="https://syncpan.top/docs/quick-start">官方文档</a></p>
 
 ---
 
@@ -61,6 +92,51 @@
 | 🌐 **跨平台** | Windows / macOS / Linux 全支持，还可通过浏览器在局域网内访问 |
 | 🔐 **数据安全** | 账号信息加密存储在本地，不会上传到任何服务器 |
 | 🚀 **自动更新** | 应用内一键检查并更新到最新版，无需手动下载重装 |
+
+---
+
+## ⚡ 效率对比 — 为什么别手动
+
+| 典型场景 | 手动操作 | SyncPan |
+|---------|---------|---------|
+| 转存 100 条分享链接 | 逐个打开、逐个保存 ≈ 1.5 小时 | 批量粘贴一键执行 **≈ 3 分钟** |
+| 追一季剧的更新 | 每天人工检查是否更新 | 设定规则一次，**全自动追完整季** |
+| 重命名 1000 个文件 | 逐个右键 ≈ 3 小时 | 正则规则批量 **几秒完成** |
+| 给 50 个文件建分享 | 网页逐个创建 ≈ 1 小时 | 批量分享 **≈ 1 分钟** |
+| 清理混入的广告文件 | 肉眼找、手动删 | 关键词扫描，**确认后一键删除** |
+
+> 时间按典型操作估算；用上批量与定时后，实际节省只会更多。
+
+---
+
+## 🧩 功能一览
+
+| 功能 | 一句话说明 | 详解 |
+|------|---------|------|
+| 🔄 自动追更 | 分享链接设任务，定时自动转存新内容 | [详解](#-自动追更) |
+| 📂 文件管理 | 应用内浏览 / 重命名 / 移动 / 删除 / 预览网盘文件 | [详解](#-文件浏览与管理) |
+| 🔍 资源搜索 | 全网网盘资源搜索 + 豆瓣榜单发现 | [详解](#-资源搜索与发现) |
+| 📦 批量转存 | 多链接一次解析、批量保存到自己网盘 | [详解](#-批量转存) |
+| 🔗 链接转换 | 别人链接转存后用自己账号重新分享 | [详解](#-链接转换) |
+| ✏️ 批量重命名 | 正则 / 序号 / 前后缀，预览后批量改名 | [详解](#-批量重命名) |
+| 📢 批量分享 | 批量生成分享链接 + 提取码 | [详解](#-批量分享) |
+| 🗂️ 我的分享 | 分享记录查看 / 排序 / 导出 CSV | [详解](#-我的分享) |
+| 🧹 广告清理/插入 | 扫描删除广告文件 / 批量插入推广文件 | [详解](#-广告清理与插入) |
+| 🌲 目录树导出 | 一键导出目录结构为文本文件 | [详解](#-目录树导出) |
+| 🔑 账号管理 | 多账号、扫码登录、夸克每日签到 | [详解](#-账号管理) |
+| 🔔 通知推送 | 微信 / 钉钉 / 飞书 / Telegram 等 8 渠道 | [详解](#-通知推送) |
+| 🌐 内网穿透 | 手机浏览器局域网使用，带爆破防护 | [详解](#-内网穿透) |
+
+---
+
+## 🦀 技术亮点
+
+- **Rust 核心引擎**：内存安全、天生高并发，转存 / 重命名 / 分享等核心操作全部由 Rust 实现，快且稳
+- **Tauri 桌面框架**：相比传统 Electron 方案，安装包更小、内存占用更低、原生体验
+- **React + TypeScript 前端**：组件化 UI，深色模式 + 10 种主题配色，流畅交互
+- **本地加密存储**：账号 Cookie / Token 使用 AES-256-GCM 加密，密钥由机器指纹派生，数据不出本机
+- **风控策略引擎**：三档预设 + 自定义参数，连续失败自动退避、夜间自动降速，保护你的网盘账号
+- **局域网服务**：内网穿透 + 访问密码 + 暴力破解防护，手机平板即用
 
 ---
 
@@ -82,6 +158,8 @@
 - **任务分组**：可将多个分享链接组合成一个「聚合任务」，统一管理、统一调度
 - **任务导入导出**：JSON 格式导出和导入任务配置，方便备份或迁移
 - **转存日志**：每次执行都有详细记录，成功了哪些、失败了哪些一目了然
+
+<p align="center"><img src="https://syncpan.top/images/docs/af-create-task.png" alt="自动追更-新建任务" width="680" /></p>
 
 ### 📂 文件浏览与管理 — 百度网盘夸克网盘文件管理器
 
@@ -112,6 +190,8 @@
 - 一键「追更」：从搜索结果直接创建自动追更任务
 - 一键「转存并分享」：将搜索到的资源保存到自己网盘并生成新的分享链接
 
+<p align="center"><img src="https://syncpan.top/images/docs/sr-main.png" alt="资源搜索界面" width="680" /></p>
+
 **发现页**：浏览豆瓣影视榜单，发现感兴趣的内容。
 
 - 电影热榜、口碑榜、新片榜
@@ -136,7 +216,7 @@
 
 ### 🔗 链接转换 — 百度网盘链接互转 / 夸克网盘链接转存分享
 
-将别人的百度网盘或夸克网盘分享链接转存后，用自己账号重新生成新的分享链接。
+将别人的百度网盘或夸克网盘分享链接转存后，用自己账号重新生成新的分享链接。资源整理党/分享者的利器：批量完成链接「换主体」，让资源真正变成自己的。
 
 **使用场景：**
 - 把收集到的资源整理后用自己账号重新分享
@@ -167,7 +247,7 @@
 
 ### 📢 批量分享 — 百度网盘夸克网盘文件批量生成分享链接
 
-批量给百度网盘和夸克网盘中的文件创建分享链接和提取码。
+批量给百度网盘和夸克网盘中的文件创建分享链接和提取码。适合资源分享者：整批文件一次生成分享，提取码和有效期统一配置，不必在网页里逐个操作。
 
 **使用场景：**
 - 一次性给多个文件生成分享链接
@@ -181,7 +261,7 @@
 
 ### 🗂️ 我的分享
 
-查看自己在百度网盘和夸克网盘上创建过的所有分享记录。
+查看自己在百度网盘和夸克网盘上创建过的所有分享记录。让「分享出去就忘」的资源变成可查看、可管理、可导出的数据资产。
 
 **使用场景：**
 - 查看自己分享过的文件和链接
@@ -215,7 +295,7 @@
 
 ### 🌲 目录树导出
 
-将网盘目录结构生成树形图或列表，导出为文本文件保存到本地。
+将网盘目录结构生成树形图或列表，导出为文本文件保存到本地。整理或展示大型资源库的利器：一键导出完整目录结构，清晰直观。
 
 **使用场景：**
 - 导出网盘目录结构用于整理和记录
@@ -254,6 +334,8 @@
 | **PushPlus** | 微信 | 微信公众号接收推送 |
 | **企业微信** | 企业微信 | 企业微信用户 |
 | **自定义 Webhook** | 任意 | 开发者，可对接自己的服务 |
+
+<p align="center"><img src="https://syncpan.top/images/docs/nt-channels.png" alt="通知渠道配置" width="680" /></p>
 
 ### 🌐 内网穿透
 
@@ -305,7 +387,7 @@
 
 ## 下载安装 — 百度网盘转存工具免费下载
 
-> 前往 [**Releases 页面**](https://github.com/mqflive/syncpan-release/releases/latest) 下载最新版本。
+> 🚀 推荐前往 [**官网下载页**](https://syncpan.top/download/) 下载（国内访问更快，附安装教程）；也可在 [Releases 页面](https://github.com/mqflive/syncpan-release/releases/latest) 下载最新版本。
 
 ### Windows
 
@@ -358,6 +440,7 @@ sudo rpm -i syncpan-*.x86_64.rpm
 欢迎加入 SyncPan 用户交流群，获取最新动态、反馈使用问题、与其他用户交流经验。
 
 - **QQ 群**：945729782 → [一键加群](https://qm.qq.com/q/HIeAFUugQQ)
+- **🎁 发帖领 SVIP**：在 抖音 / 小红书 / B站 发布 SyncPan 相关内容，客服审核后免费得 1 个月 SVIP，详见 [官网活动公告](https://syncpan.top)
 
 ---
 
@@ -395,8 +478,31 @@ SyncPan 是桌面应用，Windows、macOS、Linux 都能用。通过「内网穿
 
 ---
 
+## ⭐ Star History
+
 <p align="center">
+  <a href="https://star-history.com/#mqflive/syncpan-release&Date">
+    <img src="https://api.star-history.com/svg?repos=mqflive/syncpan-release&type=Date" alt="Star History Chart" width="540" />
+  </a>
+</p>
+
+---
+
+## 🧭 路线图
+
+- [x] 百度网盘 / 夸克网盘全功能支持
+- [x] 8 渠道通知推送
+- [x] 内网穿透（手机访问）
+- [x] 统一防风控策略引擎
+- [ ] 更多网盘平台支持（推进中）
+- [ ] 更智能的资源搜索源
+- [ ] 任务模板中心（一键套用追更方案）
+
+---
+
+<p align="center">
+  🌐 <a href="https://syncpan.top">syncpan.top</a> — SyncPan 官方网站 · 下载 / 文档 / 活动资讯<br/>
   Made with ❤️ by SyncPan Team
 </p>
 
-<!-- SEO 关键词语义索引：百度网盘转存工具 夸克网盘管理软件 网盘批量转存 网盘自动追更 百度网盘分享链接转存 夸克网盘批量转存软件 免费网盘管理工具 网盘文件批量重命名 百度网盘批量分享 跨平台网盘客户端 百度网盘资源搜索 夸克网盘扫码登录 网盘批量管理软件 syncpan 盘同步 百度云转存 夸克云盘工具 -->
+<!-- SEO 关键词语义索引：百度网盘转存工具 夸克网盘管理软件 网盘批量转存 网盘自动追更 百度网盘分享链接转存 夸克网盘批量转存软件 免费网盘管理工具 网盘文件批量重命名 百度网盘批量分享 跨平台网盘客户端 百度网盘资源搜索 夸克网盘扫码登录 网盘批量管理软件 syncpan 盘同步 百度云转存 夸克云盘工具 SyncPan官网 syncpan.top 网盘转存工具下载 -->

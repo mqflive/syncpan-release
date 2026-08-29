@@ -2,6 +2,8 @@
 
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)。
 
+🌐 官网：[syncpan.top](https://syncpan.top) · 使用文档：[syncpan.top/docs](https://syncpan.top/docs/quick-start) · 下载：[syncpan.top/download](https://syncpan.top/download/)
+
 ---
 
 ## [0.0.18] - 2026-06-28

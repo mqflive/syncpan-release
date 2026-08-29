@@ -2,6 +2,39 @@
   "version": "1.0",
   "announcements": [
     {
+      "id": "ann-2026-08-post-reward-svip",
+      "type": "feature",
+      "priority": 900,
+      "title": "🎁 发帖奖励：免费领 1 个月 SVIP",
+      "summary": "在抖音 / 小红书 / B站 任一平台发帖，客服审核后送 1 个月 SVIP。",
+      "content": "SyncPan 发帖奖励活动进行中！\n\n参与方式：\n• 在 抖音 / 小红书 / B站 任一平台发布 SyncPan 相关原创内容（图文或视频）\n• 加入客服 QQ 群（945729782），提交帖子链接与账号用户名\n• 审核通过后，1 个月 SVIP 发放到你的账号\n\n每位用户限参与一次，内容需原创且符合平台规范。",
+      "action": {
+        "type": "url",
+        "target": "https://qm.qq.com/q/HIeAFUugQQ",
+        "label": "加客服群参与"
+      },
+      "targetVersions": "*",
+      "targetLanguages": ["*"],
+      "showOnce": true,
+      "popup": true,
+      "createdAt": "2026-08-29T00:00:00Z",
+      "expiresAt": null,
+      "locales": {
+        "zh-CN": {
+          "title": "🎁 发帖奖励：免费领 1 个月 SVIP",
+          "summary": "在抖音 / 小红书 / B站 任一平台发帖，客服审核后送 1 个月 SVIP。",
+          "content": "SyncPan 发帖奖励活动进行中！\n\n参与方式：\n• 在 抖音 / 小红书 / B站 任一平台发布 SyncPan 相关原创内容（图文或视频）\n• 加入客服 QQ 群（945729782），提交帖子链接与账号用户名\n• 审核通过后，1 个月 SVIP 发放到你的账号\n\n每位用户限参与一次，内容需原创且符合平台规范。",
+          "actionLabel": "加客服群参与"
+        },
+        "en": {
+          "title": "🎁 Post & Win: 1 Month SVIP Free",
+          "summary": "Post about SyncPan on Douyin / Xiaohongshu / Bilibili and get 1 month of SVIP after review.",
+          "content": "SyncPan posting reward event is live!\n\nHow to join:\n• Post original SyncPan-related content (article or video) on Douyin / Xiaohongshu / Bilibili\n• Join our QQ group (945729782) and submit your post link + account username\n• After review, 1 month of SVIP will be granted to your account\n\nOne participation per user. Content must be original.",
+          "actionLabel": "Join via QQ Group"
+        }
+      }
+    },
+    {
       "id": "ann-2026-06-welcome-syncpan",
       "type": "info",
       "priority": 300,
