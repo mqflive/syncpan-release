@@ -3,7 +3,7 @@
   "announcements": [
     {
       "id": "ann-2026-08-post-reward-svip",
-      "type": "feature",
+      "type": "info",
       "priority": 900,
       "title": "🎁 发帖奖励：免费领 1 个月 SVIP",
       "summary": "在抖音 / 小红书 / B站 任一平台发帖，客服审核后送 1 个月 SVIP。",
@@ -64,39 +64,6 @@
           "summary": "Cross-cloud file sync tool supporting Baidu Pan and Quark Pan.",
           "content": "Thank you for using SyncPan.\n\nSyncPan can help you:\n• Sync files between Baidu Pan and Quark Pan\n• Schedule automatic sync tasks\n• Manage multiple cloud accounts\n• Batch transfer and share files\n\nIf you have suggestions or encounter issues, feel free to provide feedback.",
           "actionLabel": "Send Feedback"
-        }
-      }
-    },
-    {
-      "id": "ann-2026-06-release-v006",
-      "type": "feature",
-      "priority": 280,
-      "title": "🚀 SyncPan v0.0.6 已发布",
-      "summary": "新增消息通知系统，支持公告推送。",
-      "content": "SyncPan v0.0.6 已发布。\n\n新功能：\n• 消息通知系统：标题栏新增公告按钮，可查看最新公告\n• 定时任务增强：优化了 cron 表达式校验\n• 性能优化：降低了内存占用\n\n建议更新到最新版以获得最佳体验。",
-      "action": {
-        "type": "url",
-        "target": "https://github.com/jlcodes99/syncpan/releases/latest",
-        "label": "查看最新版本"
-      },
-      "targetVersions": "*",
-      "targetLanguages": ["*"],
-      "showOnce": true,
-      "popup": false,
-      "createdAt": "2026-06-06T00:00:00Z",
-      "expiresAt": null,
-      "locales": {
-        "zh-CN": {
-          "title": "🚀 SyncPan v0.0.6 已发布",
-          "summary": "新增消息通知系统，支持公告推送。",
-          "content": "SyncPan v0.0.6 已发布。\n\n新功能：\n• 消息通知系统：标题栏新增公告按钮，可查看最新公告\n• 定时任务增强：优化了 cron 表达式校验\n• 性能优化：降低了内存占用\n\n建议更新到最新版以获得最佳体验。",
-          "actionLabel": "查看最新版本"
-        },
-        "en": {
-          "title": "🚀 SyncPan v0.0.6 Released",
-          "summary": "New announcement notification system.",
-          "content": "SyncPan v0.0.6 has been released.\n\nNew features:\n• Announcement system: bell button in title bar for viewing announcements\n• Enhanced scheduled tasks: improved cron validation\n• Performance optimization: reduced memory usage\n\nWe recommend updating to the latest version for the best experience.",
-          "actionLabel": "View Latest Release"
         }
       }
     },
