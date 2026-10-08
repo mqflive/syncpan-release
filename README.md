@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://syncpan.top/images/logo.png" alt="SyncPan Logo" width="110" />
+<img src="assets/images/logo.png" alt="SyncPan Logo" width="110" />
 
 # SyncPan（盘同步）
 
@@ -83,7 +83,7 @@
 ## 界面预览
 
 <p align="center">
-  <img src="https://syncpan.top/images/docs/qs-main-interface.png" alt="SyncPan 主界面" width="760" />
+  <img src="assets/images/docs/qs-main-interface.png" alt="SyncPan 主界面" width="760" />
 </p>
 <p align="center">SyncPan 主界面 · 更多功能截图与上手教程见 <a href="https://syncpan.top/docs/quick-start">官方文档</a></p>
 
@@ -183,7 +183,7 @@
 - **任务导入导出**：JSON 格式导出和导入任务配置，方便备份或迁移
 - **转存日志**：每次执行都有详细记录，成功了哪些、失败了哪些一目了然
 
-<p align="center"><img src="https://syncpan.top/images/docs/af-create-task.png" alt="自动追更-新建任务" width="680" /></p>
+<p align="center"><img src="assets/images/docs/af-create-task.png" alt="自动追更-新建任务" width="680" /></p>
 
 ### 📅 追剧日历 — 电视剧 / 动漫 / 综艺排期一览
 
@@ -203,7 +203,7 @@
 
 > 💡 追剧日历为 SVIP 专属功能，纯展示视图；想自动转存新集请配合「自动追更」使用。
 
-<p align="center"><img src="https://syncpan.top/images/docs/ac-tab.png" alt="追剧日历" width="720" /></p>
+<p align="center"><img src="assets/images/docs/ac-tab.png" alt="追剧日历" width="720" /></p>
 
 ### 📂 文件浏览与管理 — 10 大网盘统一文件管理器
 
@@ -226,7 +226,7 @@
 - 存储空间：实时显示已用容量和总容量
 - 115 网盘专属：离线（云下载）任务列表随时查看
 
-<p align="center"><img src="https://syncpan.top/images/docs/fb-main.png" alt="文件浏览与管理" width="720" /></p>
+<p align="center"><img src="assets/images/docs/fb-main.png" alt="文件浏览与管理" width="720" /></p>
 
 ### 🚀 跨盘互传 — 网盘之间直接搬家
 
@@ -246,7 +246,7 @@
 - **传输前预检**：文件数、总体积、同名冲突提前告知，心里有数再动手
 - **带宽限速**：全局下载限速，边传边用不卡网
 
-<p align="center"><img src="https://syncpan.top/images/docs/tr-main.png" alt="跨盘互传" width="720" /></p>
+<p align="center"><img src="assets/images/docs/tr-main.png" alt="跨盘互传" width="720" /></p>
 
 ### 🔍 资源搜索与发现 — 全网网盘资源搜索
 
@@ -260,7 +260,7 @@
 - 一键「追更」：从搜索结果直接创建自动追更任务
 - 一键「转存并分享」：将搜索到的资源保存到自己网盘并生成新的分享链接
 
-<p align="center"><img src="https://syncpan.top/images/docs/sr-main.png" alt="资源搜索界面" width="680" /></p>
+<p align="center"><img src="assets/images/docs/sr-main.png" alt="资源搜索界面" width="680" /></p>
 
 **豆瓣榜单**：浏览豆瓣影视榜单，发现感兴趣的内容。
 
@@ -271,7 +271,7 @@
 
 **热门资源**：热播榜 / 新片榜 / 好评榜三种榜单，覆盖电影 / 电视剧 / 动漫 / 综艺 / 短剧，支持类型与年份筛选，点海报即可直接搜索该资源。
 
-<p align="center"><img src="https://syncpan.top/images/docs/hr-main.png" alt="热门资源榜单" width="720" /></p>
+<p align="center"><img src="assets/images/docs/hr-main.png" alt="热门资源榜单" width="720" /></p>
 
 ### 📦 批量转存 — 多链接批量转存 / 多账号分发
 
@@ -375,7 +375,7 @@
 
 > 💡 链接监控为 VIP / SVIP 专属功能。
 
-<p align="center"><img src="https://syncpan.top/images/docs/lm-main.png" alt="链接监控" width="720" /></p>
+<p align="center"><img src="assets/images/docs/lm-main.png" alt="链接监控" width="720" /></p>
 
 ### 🧹 广告清理与插入
 
@@ -422,7 +422,7 @@
 - 夸克网盘每日签到
 - 115 网盘扫码登录（v0.34 起），登录一次稳定长期使用
 
-<p align="center"><img src="https://syncpan.top/images/docs/lg-add-account.png" alt="添加网盘账号-10大平台" width="640" /></p>
+<p align="center"><img src="assets/images/docs/lg-add-account.png" alt="添加网盘账号-10大平台" width="640" /></p>
 
 ### 🤖 QQ / 微信通知 — 事件实时推送到聊天窗口
 
@@ -454,7 +454,7 @@
 
 > 事件按粒度独立开关（追更成功 / 失败 / 部分成功 / 链接失效 / 工具完成 / 应用更新等），渠道与事件列表由后端动态下发。
 
-<p align="center"><img src="https://syncpan.top/images/docs/nt-channels.png" alt="通知渠道配置" width="680" /></p>
+<p align="center"><img src="assets/images/docs/nt-channels.png" alt="通知渠道配置" width="680" /></p>
 
 ### 🌐 内网穿透
 
