@@ -1,0 +1,82 @@
+name: 清理旧版本安装包
+
+# 手动触发：仓库页面 Actions → 左侧「清理旧版本安装包」→ Run workflow
+# 命令行触发：gh workflow run prune-release-assets.yml -f keep_from=v1.3.2 [-f confirm=true]
+# 注意：workflow_dispatch 只在默认分支（或 UI 里选择的分支）上存在该文件时才可触发。
+# Token 由 GitHub 自动注入，无需配置任何 Secret；首次建议不勾 confirm 只跑预演。
+on:
+  workflow_dispatch:
+    inputs:
+      keep_from:
+        description: '保留版本（该版本及更新版本的附件一律不动），如 v1.3.2'
+        required: true
+        type: string
+      confirm:
+        description: '真正删除（不勾选 = 只预演，不会删任何东西）'
+        required: false
+        type: boolean
+        default: false
+      all_assets:
+        description: '清空旧版本的所有附件（忽略扩展名过滤）'
+        required: false
+        type: boolean
+        default: false
+      include_prerelease:
+        description: '同时处理 beta/rc 等预发布版本'
+        required: false
+        type: boolean
+        default: false
+
+# 删除 Release 附件需要 Contents 写权限，GITHUB_TOKEN 由平台自动提供
+permissions:
+  contents: write
+
+concurrency:
+  group: prune-release-assets
+  cancel-in-progress: false
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 检出脚本
+        uses: actions/checkout@v4
+
+      - name: 准备 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 执行清理
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KEEP_FROM: ${{ inputs.keep_from }}
+          CONFIRM: ${{ inputs.confirm }}
+          ALL_ASSETS: ${{ inputs.all_assets }}
+          INCLUDE_PRE: ${{ inputs.include_prerelease }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${KEEP_FROM// }" ]; then
+            echo "::error::keep_from 不能为空，例如 v1.3.2"
+            exit 1
+          fi
+
+          args=("$KEEP_FROM" --repo "$REPO")
+
+          if [ "$ALL_ASSETS" = "true" ]; then
+            args+=(--all)
+          fi
+          if [ "$INCLUDE_PRE" = "true" ]; then
+            args+=(--include-prerelease)
+          fi
+          if [ "$CONFIRM" = "true" ]; then
+            args+=(--force)
+            echo "::warning::已开启删除模式，将真实删除 $KEEP_FROM 之前的 Release 附件（Release 本身与更新日志保留）"
+          else
+            echo "::notice::当前为预演模式（未勾选 confirm），只打印不会删除"
+          fi
+
+          node scripts/prune-old-release-assets.mjs "${args[@]}" | tee -a "$GITHUB_STEP_SUMMARY"
